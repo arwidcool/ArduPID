@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ArduPID_h
+#define ArduPID_h
 #include "Arduino.h"
 #include "FireTimer.h"
 
@@ -70,7 +71,7 @@ public:
 
 
 
-protected:
+
 	double bias;
 
 	double outputMax = 255;
@@ -108,3 +109,5 @@ protected:
 
 	FireTimer timer;
 };
+
+#endif
